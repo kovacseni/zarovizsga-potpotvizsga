@@ -7,7 +7,7 @@ public class UniqueFinder {
 
     public List<Character> uniqueChars(String str) {
         if (str == null) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Parameter must not be null!");
         }
         char[] charsOfStr = str.toCharArray();
         List<Character> uniqueCharsOfStr = new ArrayList<>();
