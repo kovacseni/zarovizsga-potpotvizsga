@@ -1,4 +1,4 @@
-/*package hu.nive.ujratervezes.zarovizsga.housecup;
+package hu.nive.ujratervezes.zarovizsga.housecup;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -22,9 +22,9 @@ class HouseCupTest {
     @BeforeEach
     void init() throws SQLException {
         dataSource = new MariaDbDataSource();
-        dataSource.setUrl("jdbc:mariadb://localhost:3306/employees?useUnicode=true");
-        dataSource.setUser("employees");
-        dataSource.setPassword("employees");
+        dataSource.setUrl("jdbc:mariadb://localhost:3306/house?useUnicode=true");
+        dataSource.setUser("houseuser");
+        dataSource.setPassword("housepassword");
 
         houseCup = new HouseCup(dataSource);
 
@@ -86,4 +86,4 @@ class HouseCupTest {
 
     }
 
-}*/
+}
